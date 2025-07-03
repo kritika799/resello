@@ -66,19 +66,19 @@ a:hover {
     z-index: 100;
 }
 
-.nav__list {
+.nav-list {
     display: flex;
     gap: 2rem;
     list-style: none;
 }
 
-.nav__list li {
+.nav-list li {
     font-weight: 600;
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.nav__list li:hover {
+.nav-list li:hover {
     color: var(--highlight);
 }
 

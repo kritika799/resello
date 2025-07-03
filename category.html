@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSV7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./images/L.jpeg" alt="Store Logo" width="60" class="logo-image">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link"><b>Home</b></a></li>
+                <li><a href="#" class="nav-link"><b>Categories</b></a></li>
+                <li><a href="#" class="nav-link"><b>Contact Us</b></a></li>
+                <li><a href="#" class="nav-link"><b>Blog</b></a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" aria-label="Shopping Cart"><i class="fa-solid fa-bag-shopping"></i></a>
+            <a href="#" aria-label="User Profile"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <main class="main-content">
+        <aside class="sidebar">
+            <section class="filter-section">
+                <h2 class="filter-heading">Categories</h2>
+                <ul class="filter-list">
+                    <li class="filter-item">Clothing (3)</li>
+                    <li class="filter-item">Furniture (2)</li>
+                    <li class="filter-item">Stationery (3)</li>
+                    <li class="filter-item">Costumes (2)</li>
+                </ul>
+            </section>
+            <section class="filter-section">
+                <h2 class="filter-heading">Price Range</h2>
+                <ul class="filter-list">
+                    <li class="filter-item"><label><input type="checkbox"> ₹100 - ₹300</label></li>
+                    <li class="filter-item"><label><input type="checkbox"> ₹500 - ₹1000</label></li>
+                    <li class="filter-item"><label><input type="checkbox"> ₹1000 - ₹5000</label></li>
+                    <li class="filter-item"><label><input type="checkbox"> ₹5000 - ₹20000</label></li>
+                </ul>
+            </section>
+        </aside>
+        <section class="product-section">
+            <h1 class="section-heading">Our Collection of Products</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search an item" class="search-input" aria-label="Search products">
+            </div>
+            <p class="product-count">Showing 1-9 items out of 25 items</p>
+            <p class="product-description">Discover your favorite products like dresses, furniture, and more.</p>
+            <div class="product-grid">
+                <!-- Repeated product cards for brevity, ideally use a loop in a template engine -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="./images/fancy.jpg" alt="Product Image" class="product-image">
+                        <span class="discount-badge">-11%</span>
+                    </div>
+                    <div class="product-details">
+                        <h2 class="product-title">Product Name</h2>
+                        <div class="product-footer">
+                            <span class="product-price">₹500</span>
+                            <button class="add-to-cart" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="pagination">
+                <p class="product-count">Showing 1-9 of 25 items</p>
+                <button class="load-more-button">Load More <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="social-links">
+            <a href="#" class="social-link"><i class="fa-brands fa-yahoo"></i> Yahoo</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+            <a href="#" class="social-link">Gmail</a>
+        </section>
+        <section class="subscription">
+            <h2 class="subscription-heading">Subscribe to Premium</h2>
+            <p class="subscription-text">Stay updated on exclusive discounts</p>
+            <div class="subscription-form">
+                <input type="email" placeholder="Enter your email" class="subscription-input" aria-label="Email for subscription">
+                <button type="submit" class="subscription-button">Subscribe</button>
+            </div>
+        </section>
+        <section class="footer-links">
+            <div class="footer-column">
+                <h3 class="footer-heading">Products</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Clothes</a></li>
+                    <li><a href="#" class="footer-link">Furniture</a></li>
+                    <li><a href="#" class="footer-link">Stationery</a></li>
+                    <li><a href="#" class="footer-link">Costumes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Legal Pages</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                    <li><a href="#" class="footer-link">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Terms and Policy</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Limitation of Renting</a></li>
+                    <li><a href="#" class="footer-link">Return Policy</a></li>
+                    <li><a href="#" class="footer-link">Renting Terms</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Shipping Policy</h3>
+                <ul class="footer-list">
+                    <li><a href="#" class="footer-link">Processing Time</a></li>
+                    <li><a href="#" class="footer-link">Order Tracking</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>Copyright &copy; 2025</p>
+        </section>
+    </footer>
+</body>
+</html>

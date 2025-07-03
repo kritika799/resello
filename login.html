@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="/" aria-label="Homepage">
+                <img src="./images/L.jpeg" alt="Store Logo" class="logo-image" width="80">
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" class="user-action" aria-label="Shopping Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#" class="user-action" aria-label="User Profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="login-section">
+            <div class="login-card">
+                <h1>Login</h1>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com" required aria-label="Email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required aria-label="Password">
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember-me" aria-label="Remember me">
+                            Remember Me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <p class="signup-prompt">Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="social-links">
+            <h2>Connect With Us</h2>
+            <ul class="social-list">
+                <li><a href="https://www.yahoo.com" class="social-link">Yahoo <i class="fa-brands fa-yahoo"></i></a></li>
+                <li><a href="https://www.instagram.com" class="social-link">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" class="social-link">Facebook <i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="mailto:info@example.com" class="social-link">Gmail <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="footer-content">
+            <div class="subscribe-section">
+                <h2>Subscribe to Premium</h2>
+                <p>Stay updated with the latest discounts and offers</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Subscribe to newsletter">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>Clothes</li>
+                        <li>Furniture</li>
+                        <li>Stationery</li>
+                        <li>Costumes</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal Pages</h3>
+                    <ul>
+                        <li>Acceptance of Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>Return Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shipping Policy</h3>
+                    <ul>
+                        <li>Processing Time</li>
+                        <li>Order Tracking</li>
+                        <li>Shipping Rates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <p>© 2025 Your Company. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="./images/L.jpeg" alt="Store Logo" class="logo-image" width="60">
+        </div>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-item"><b>Home</b></a></li>
+                <li><a href="#" class="nav-item"><b>Categories</b></a></li>
+                <li><a href="#" class="nav-item"><b>Contact Us</b></a></li>
+                <li><a href="#" class="nav-item"><b>Blog</b></a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" aria-label="Shopping Cart" class="user-action-item">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#" aria-label="User Profile" class="user-action-item">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="checkout-form">
+            <div class="checkout-steps">
+                <div class="step">
+                    <h2>Personal</h2>
+                </div>
+                <div class="step">
+                    <h2>Billing</h2>
+                </div>
+                <div class="step">
+                    <h2>Confirmation</h2>
+                </div>
+            </div>
+
+            <div class="form-fields">
+                <div class="form-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" placeholder="Your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" placeholder="Your last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number*</label>
+                    <input type="tel" id="phone-number" placeholder="+1 234 567 890" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Street Address*</label>
+                    <input type="text" id="address" placeholder="123 Main St" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City/Town</label>
+                    <input type="text" id="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Country">
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">Postcode/ZIP</label>
+                    <input type="text" id="zipcode" placeholder="ZIP Code">
+                </div>
+                <div class="form-group">
+                    <button class="btn-proceed">Proceed to next step</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <div class="order-summary-header">
+                <h2>Order Summary</h2>
+                <a href="#" class="edit-cart">Edit Cart</a>
+            </div>
+            <div class="order-items">
+                <div class="order-item">
+                    <img src="./images/ethnic-dress.jpg" alt="Ethnic Dress" class="item-image">
+                    <div class="item-details">
+                        <span class="item-name">Ethnic Dress</span>
+                        <span class="item-price">₹1200</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" aria-label="Decrease quantity">-</button>
+                        <input type="number" class="item-quantity" value="1" min="1" readonly>
+                        <button class="quantity-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <span class="item-subtotal">₹1200</span>
+                </div>
+                <div class="order-item">
+                    <img src="./images/table.jpg" alt="Furniture (Table)" class="item-image">
+                    <div class="item-details">
+                        <span class="item-name">Furniture (Table)</span>
+                        <span class="item-price">₹1800</span>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn" aria-label="Decrease quantity">-</button>
+                        <input type="number" class="item-quantity" value="1" min="1" readonly>
+                        <button class="quantity-btn" aria-label="Increase quantity">+</button>
+                    </div>
+                    <span class="item-subtotal">₹1800</span>
+                </div>
+            </div>
+            <div class="promo-code">
+                <label for="promo-code">Promo Code</label>
+                <div class="promo-input">
+                    <input type="text" id="promo-code" placeholder="Enter promo code">
+                    <button class="promo-btn">Apply</button>
+                </div>
+            </div>
+            <div class="order-total">
+                <div class="total-line">
+                    <span>Subtotal</span>
+                    <span>₹3000</span>
+                </div>
+                <div class="total-line">
+                    <span>Shipping</span>
+                    <span>₹200</span>
+                </div>
+                <div class="total-line tax">
+                    <span>Tax (5%)</span>
+                    <span>₹150</span>
+                </div>
+                <div class="total-line total-price">
+                    <span>Total</span>
+                    <span>₹3350</span>
+                </div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="social-links">
+            <h2>Connect With Us</h2>
+            <ul class="social-list">
+                <li><a href="https://www.yahoo.com" class="social-item">Yahoo <i class="fa-brands fa-yahoo"></i></a>
+                </li>
+                <li><a href="https://www.instagram.com" class="social-item">Instagram <i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" class="social-item">Facebook <i
+                            class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="mailto:info@example.com" class="social-item">Gmail</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-content">
+            <div class="subscribe">
+                <h1>Subscribe To Premium</h1>
+                <p class="subscription-info">Stay Updated with the Latest Discounts</p>
+                <div class="subscribe-input">
+                    <input type="email" placeholder="Enter your email" aria-label="Subscribe to newsletter">
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h2>Products</h2>
+                    <ul>
+                        <li>Clothes</li>
+                        <li>Furniture</li>
+                        <li>Stationery</li>
+                        <li>Costumes</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Legal Pages</h2>
+                    <ul>
+                        <li>Acceptance of Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h2>Shipping Policy</h2>
+                    <ul>
+                        <li>Processing Time</li>
+                        <li>Order Tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <p>&copy; 2025 Your Company</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

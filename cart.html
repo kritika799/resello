@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="/" aria-label="Homepage">
+                <img src="./images/L.jpeg" alt="Store Logo" class="logo-image" width="80">
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <a href="#" class="user-action" aria-label="Shopping Cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+            <a href="#" class="user-action" aria-label="User Profile">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="cart-section">
+            <header class="cart-header">
+                <h1>Your Cart</h1>
+                <p class="cart-count">3 items</p>
+            </header>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item-header">
+                        <span></span>
+                        <span>Product</span>
+                        <span>Price</span>
+                        <span>Quantity</span>
+                        <span>Total</span>
+                    </div>
+                    <article class="cart-item">
+                        <button class="remove-item" aria-label="Remove item">×</button>
+                        <div class="item-details">
+                            <img src="./images/for-4th-page.jpg" alt="Ethnic Dress" class="item-image">
+                            <div class="item-info">
+                                <h3 class="item-name">Ethnic Dress</h3>
+                                <p class="item-category">Clothing</p>
+                            </div>
+                        </div>
+                        <span class="item-price">$180</span>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" readonly>
+                            <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <span class="item-total">$180</span>
+                    </article>
+                    <article class="cart-item">
+                        <button class="remove-item" aria-label="Remove item">×</button>
+                        <div class="item-details">
+                            <img src="./images/for-4th-page.jpg" alt="Costume" class="item-image">
+                            <div class="item-info">
+                                <h3 class="item-name">Costume</h3>
+                                <p class="item-category">Clothing</p>
+                            </div>
+                        </div>
+                        <span class="item-price">$180</span>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" readonly>
+                            <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <span class="item-total">$180</span>
+                    </article>
+                    <article class="cart-item">
+                        <button class="remove-item" aria-label="Remove item">×</button>
+                        <div class="item-details">
+                            <img src="./images/furniture.webp" alt="Modern Table" class="item-image">
+                            <div class="item-info">
+                                <h3 class="item-name">Modern Table</h3>
+                                <p class="item-category">Furniture</p>
+                            </div>
+                        </div>
+                        <span class="item-price">$180</span>
+                        <div class="quantity-control">
+                            <button class="quantity-btn decrease" aria-label="Decrease quantity">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1" readonly>
+                            <button class="quantity-btn increase" aria-label="Increase quantity">+</button>
+                        </div>
+                        <span class="item-total">$180</span>
+                    </article>
+                </div>
+                <aside class="cart-summary">
+                    <h2>Cart Total</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$540</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Discount</span>
+                            <span>$0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>$20</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$560</span>
+                        </div>
+                    </div>
+                    <div class="promo-code">
+                        <label for="promo-code">Promo Code</label>
+                        <div class="promo-input">
+                            <input type="text" id="promo-code" placeholder="Enter promo code" aria-label="Promo code">
+                            <button class="promo-btn">Apply</button>
+                        </div>
+                    </div>
+                    <a href="#" class="checkout-btn">Proceed to Checkout</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="recommended-products">
+            <h2>You May Also Like</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./images/for-4th-page.jpg" alt="Ethnic Dress" class="product-image">
+                    <h3 class="product-name">Ethnic Dress</h3>
+                    <p class="product-category">Clothing</p>
+                    <p class="product-price">$120</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product-card">
+                    <img src="./images/sofa-grid.jpg" alt="Modern Sofa" class="product-image">
+                    <h3 class="product-name">Modern Sofa</h3>
+                    <p class="product-category">Furniture</p>
+                    <p class="product-price">$350</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+                <article class="product-card">
+                    <img src="./images/furniture.webp" alt="Wooden Table" class="product-image">
+                    <h3 class="product-name">Wooden Table</h3>
+                    <p class="product-category">Furniture</p>
+                    <p class="product-price">$200</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="social-links">
+            <h2>Connect With Us</h2>
+            <ul class="social-list">
+                <li><a href="https://www.yahoo.com" class="social-link">Yahoo <i class="fa-brands fa-yahoo"></i></a></li>
+                <li><a href="https://www.instagram.com" class="social-link">Instagram <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com" class="social-link">Facebook <i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="mailto:info@example.com" class="social-link">Gmail <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="footer-content">
+            <div class="subscribe-section">
+                <h2>Subscribe to Premium</h2>
+                <p>Stay updated with the latest discounts and offers</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Subscribe to newsletter">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li>Clothes</li>
+                        <li>Furniture</li>
+                        <li>Stationery</li>
+                        <li>Costumes</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal Pages</h3>
+                    <ul>
+                        <li>Acceptance of Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>Return Policy</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Shipping Policy</h3>
+                    <ul>
+                        <li>Processing Time</li>
+                        <li>Order Tracking</li>
+                        <li>Shipping Rates</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <p>© 2025 Your Company. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
